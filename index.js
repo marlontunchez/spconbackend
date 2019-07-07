@@ -1,6 +1,6 @@
 let express= require("express");
 let app = express();
-let port = process.env.port;
+let port= process.env.port;
 let cors= require("cors");
 let rusuario= require("./src/routes/rusuario.js");
 let rlogin= require("./src/routes/rlogin.js");
