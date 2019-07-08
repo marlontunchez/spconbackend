@@ -1,10 +1,9 @@
 let express= require("express");
 let app = express();
-var port= process.env.port;
+var port= process.env.port
 let cors= require("cors");
 let rusuario= require("./src/routes/rusuario.js");
 let rlogin= require("./src/routes/rlogin.js");
-
 let morgan =  require("morgan");
 app.use(express.json());
 app.use(morgan("dev"));
