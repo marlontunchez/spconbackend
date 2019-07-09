@@ -26,7 +26,7 @@ function crear(req, res){
     if (error){
     res.send(error.message);
     }else{
-     res.status(200).send(results);
+     res.status(200).json(results);
    }
    connection.end();
   });
