@@ -5,7 +5,7 @@ let token =""
 
 module.exports = (req, res, next) =>{
     token = req.headers['authorization']
-  
+  /* 
     if (token=="j" || token==""|| token==null) {
        return res.status(401).send({
     message: 'Es necesario un token'
@@ -32,4 +32,5 @@ module.exports = (req, res, next) =>{
       }
     })
  }
+ */ 
 }
