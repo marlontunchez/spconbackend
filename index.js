@@ -9,7 +9,7 @@ let morgan =  require("morgan");
 
 app.use(express.json());
 app.use(morgan("dev"));
-app.use(cors);
+app.use(cors());
 app.use('/api', rusuario);
 app.use('/api', rlogin);
 app.use('/api', rcurso);
