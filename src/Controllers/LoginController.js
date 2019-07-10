@@ -4,7 +4,7 @@ let jwt = require("jsonwebtoken");
 let connection= mysql.createConnection
 function login(req, res){
   const {usuario,contraseña} = req.body;
-  let sql="call flogin('"+usuario+"','"+contraseña+"')";
+  let sql="call flogin('"+usuario+"','"+contra+"')";
   let connection = mysql.createConnection(config);
   connection.query(sql,true,(error,results,fields)=>{
   if (error){
