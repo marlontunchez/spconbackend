@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(morgan("dev"));
 app.use('/api', rusuario);
 app.use('/api', rlogin);
-
+app.use('/api', rcurso);
 app.listen(port,()=>{
 console.log("El servidor esta corriendo en el puerto: "+port);
 });
