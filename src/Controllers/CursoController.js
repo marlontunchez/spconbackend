@@ -8,7 +8,7 @@ function getall(req, res){
   if (error){
   res.send(error.message);
   }else{
-   res.send(results);
+   res.json(results[0]);
  }
  connection.end();
 });
